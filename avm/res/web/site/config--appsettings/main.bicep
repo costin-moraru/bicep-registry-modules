@@ -52,7 +52,7 @@ var azureWebJobsValues = !empty(storageAccountResourceId) && !(storageAccountUse
 var appInsightsValues = !empty(appInsightResourceId)
   ? {
       APPLICATIONINSIGHTS_CONNECTION_STRING: appInsight.properties.ConnectionString
-      ApplicationInsightsAgent_EXTENSION_VERSION: contains(kind, 'linux') ? '~2' : '~3'
+      ApplicationInsightsAgent_EXTENSION_VERSION: contains(kind, 'linux') ? '~3' : '~2'
     }
   : {}
 
